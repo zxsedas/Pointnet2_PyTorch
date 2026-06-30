@@ -16,7 +16,7 @@ requirements = ["torch>=1.4"]
 
 exec(open(osp.join("pointnet2_ops", "_version.py")).read())
 
-os.environ["TORCH_CUDA_ARCH_LIST"] = "3.7+PTX;5.0;6.0;6.1;6.2;7.0;7.5"
+os.environ["TORCH_CUDA_ARCH_LIST"] = "8.6+PTX;8.7;8.9;9.0;12.0;12.1"
 setup(
     name="pointnet2_ops",
     version=__version__,
